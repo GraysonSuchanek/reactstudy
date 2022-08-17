@@ -1,3 +1,5 @@
+import ExpenseItem from "./components/ExpenseItem";
+
 function App() {
   // JS without React --
   // const para = document.createElement('p');
@@ -6,7 +8,7 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <p>this is also visible.</p>
+      <ExpenseItem/>
     </div>
   );
 }
