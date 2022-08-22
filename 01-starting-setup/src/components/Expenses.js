@@ -1,3 +1,5 @@
+import ExpenseItem from "./ExpenseItem"
+
 function Expenses (props) {
     const expensesList = [
         {
@@ -27,7 +29,28 @@ function Expenses (props) {
       ];
 
     return (
-        console.log('test');
+        <div>
+        <ExpenseItem
+        title={expensesList[0].title}
+        date={expensesList[0].date}
+        amount={expensesList[0].amount}
+      />
+      <ExpenseItem
+        title={expensesList[1].title}
+        date={expensesList[1].date}
+        amount={expensesList[1].amount}
+      />
+      <ExpenseItem
+        title={expensesList[2].title}
+        date={expensesList[2].date}
+        amount={expensesList[2].amount}
+      />
+      <ExpenseItem
+        title={expensesList[3].title}
+        date={expensesList[3].date}
+        amount={expensesList[3].amount}
+      />
+      </div>
     )
 }
 
